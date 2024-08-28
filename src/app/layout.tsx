@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`transition-all  ${inter.className}`}>
         <ClientProvider>{children}</ClientProvider>
       </body>
     </html>
