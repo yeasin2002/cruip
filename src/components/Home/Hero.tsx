@@ -22,41 +22,38 @@ export const Hero = ({ ...props }: Props) => {
   return (
     <div
       {...props}
-      className="flex items-center  gap-x-10 gap-y-10 md:container py-16 flex-col  lg:flex-row min-h-screen px-4 relative left-0 top-0"
+      className="relative left-0 top-0 flex flex-col items-center gap-x-10 gap-y-10 px-4 py-16 md:flex-row"
     >
       <div className="space-y-6 text-center md:text-start">
-        <h1 className="text-foreground text-5xl md:text-8xl font-black tracking-tighter md:leading-[97.68px]  ">
+        <h1 className="text-5xl font-black tracking-tighter text-foreground sm:text-6xl md:text-8xl md:leading-[97.68px]">
           Your website, <br /> reimagined
         </h1>
         <p
-          className={`${interFont.className} text-lg sm:text-xl  text-[#a2a2a8] md:tracking-wide leading-7   tracking-normal `}
+          className={`${interFont.className} text-lg leading-7 tracking-normal text-[#a2a2a8] sm:text-xl md:tracking-wide`}
         >
-          Our landing page template works on all devices, so you only have to
-          set it up once, and get beautiful results forever.
+          Our landing page template works on all devices, so you only have to set it up once, and
+          get beautiful results forever.
         </p>
-        <div className="flex items-center flex-col  gap-y-2  lg:flex-row lg:w-2/3">
+
+        <div className="flex flex-col items-center justify-center gap-y-2 sm:w-full sm:flex-row sm:px-14 md:px-0 lg:w-2/3">
           <input
             type="text"
             placeholder="Phone Number"
-            className="dark:bg-[#2E2E33] border  border-[#6E6E76] rounded-md shadow-none cursor-text m-0 mr-2 overflow-hidden p-3  px-4 w-full  flex-grow"
+            className="m-0 mr-2 w-full flex-grow cursor-text overflow-hidden rounded-md border border-[#6E6E76] p-3 px-4 shadow-none dark:bg-[#2E2E33]"
           />
-          <Button className="w-full py-4 lg:w-1/3 lg:h-full">
-            Request Code
-          </Button>
+          <Button className="w-full py-4 sm:h-full sm:w-1/3">Request Code</Button>
         </div>
 
-        <div className="space-y-1  ">
+        <div className="space-y-1 sm:px-14 md:px-0">
           {list.map((item) => (
-            <p key={item} className="flex items-center gap-x-1 ">
+            <p key={item} className="flex items-center gap-x-1">
               <Check className="size-6 text-mainGreen" />
-              <span className="text-[#52525A] font-inter tracking-[-0.16px] leading-6 ">
-                {item}
-              </span>
+              <span className="font-inter leading-6 tracking-[-0.16px] text-[#52525A]">{item}</span>
             </p>
           ))}
         </div>
       </div>
-      <div className="w-full lg:w-1/3   overflow-y-hidden ">
+      <div className="w-full overflow-y-hidden sm:w-2/3 md:h-2/4 xl:w-1/3">
         <Image src={heroMockup} alt="Hero Mockup" className="z-30" />
       </div>
     </div>

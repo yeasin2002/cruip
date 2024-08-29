@@ -71,3 +71,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.slick-active {
+  margin: 0 0.5rem !important;
+}

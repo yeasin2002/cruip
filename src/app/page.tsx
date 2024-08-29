@@ -8,9 +8,11 @@ import { ServerSliders } from "@/components/Home/ServerSliders";
 const RootPage = () => {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Statistics />
+      <div className="sm:container">
+        <Nav />
+        <Hero />
+        <Statistics />
+      </div>
       <ServerSliders />
     </>
   );
