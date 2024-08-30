@@ -69,10 +69,10 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
         })}
 
         <div className="mx-4 my-8 flex items-center justify-between">
-          <button className="bg-[#2f2e33] p-4" onClick={goToPrevSlide}>
+          <button className="bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400" onClick={goToPrevSlide}>
             <ArrowLeft />
           </button>
-          <button className="bg-[#2f2e33] p-4" onClick={goToNextSlide}>
+          <button className="bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400" onClick={goToNextSlide}>
             <ArrowRight />
           </button>
         </div>

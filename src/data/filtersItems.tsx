@@ -1,6 +1,5 @@
-import { Blocks } from "@/components/icons";
-import { FlipVertical2, Brush, Satellite, Cone } from "lucide-react";
-import React from "react";
+import { LayoutGrid, FlipVertical2, Brush, Satellite, Cone, LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 type groupName = "getting_started" | "collectionList" | "Element Hierarchy" | "styling_basics" | "image_field";
 
@@ -11,34 +10,35 @@ export type itemList = {
 };
 
 type menuList = {
-  icon: React.ReactNode;
+  // Icon: React.ReactNode;
+  Icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
   name: string;
   groupName: groupName;
 };
 
 export const filterMenu: menuList[] = [
   {
-    icon: <Satellite className="filter-icons" />,
+    Icon: Satellite,
     name: "Getting Started",
     groupName: "getting_started",
   },
   {
-    icon: <FlipVertical2 className="filter-icons" />,
+    Icon: FlipVertical2,
     name: "Collection List",
     groupName: "collectionList",
   },
   {
-    icon: <Blocks className="filter-icons" />,
+    Icon: LayoutGrid,
     name: "Element Hierarchy",
     groupName: "Element Hierarchy",
   },
   {
-    icon: <Brush className="filter-icons" />,
+    Icon: Brush,
     name: "Styling Basics",
     groupName: "styling_basics",
   },
   {
-    icon: <Cone className="filter-icons" />,
+    Icon: Cone,
     name: "Image Field",
     groupName: "image_field",
   },

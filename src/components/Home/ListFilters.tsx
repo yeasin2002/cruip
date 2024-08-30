@@ -44,13 +44,18 @@ export const ListFilters = ({ ...props }: Props) => {
                 onClick={() => setActive(menu.groupName)}
                 key={menu.name}
                 className={cn(
-                  `flex items-center gap-x-2 bg-[#2f2e33] p-2 text-gray-200 lg:w-full ${interFont.className} rounded-sm font-medium`,
+                  `flex items-center gap-x-2 bg-white p-2 text-gray-800 shadow-sm dark:bg-[#2f2e33] dark:text-gray-200 lg:w-full ${interFont.className} rounded-sm font-medium`,
                   {
-                    "bg-[#223c3d]": menu.groupName === active,
+                    "bg-mainGreen text-white dark:bg-[#223c3d]": menu.groupName === active,
                   },
                 )}
               >
-                {menu.icon}
+                {/* {menu.icon} */}
+                <menu.Icon
+                  className={cn(`size-4 font-bold text-mainGreen dark:text-gray-200`, {
+                    "text-white": menu.groupName === active,
+                  })}
+                />
                 <span>{menu.name}</span>
               </button>
             );
@@ -61,9 +66,11 @@ export const ListFilters = ({ ...props }: Props) => {
             return (
               <div key={item.name} className="relative">
                 <Image src={videoThumbnail} alt="Video Thumbnail" />
-                <div className="absolute bottom-0 left-0 flex w-full justify-between bg-[#1f1f21]/80 px-4 py-2">
+                <div className="absolute bottom-0 left-0 flex w-full justify-between bg-gray-200 px-4 py-2 dark:bg-[#1f1f21]/80">
                   <p className={`${interFont.className} font-medium`}>{item.name}</p>
-                  <p className="rounded-full bg-[#4FD1C5]/20 px-2 py-1 text-xs">{item.time}</p>
+                  <p className="rounded-full bg-[#858585] px-2 py-1 text-xs text-white dark:bg-[#4FD1C5]/20">
+                    {item.time}
+                  </p>
                 </div>
                 <Image
                   src={play}

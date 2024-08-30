@@ -21,10 +21,11 @@ export function Satellite(props: Props) {
 
 export function Blocks(props: Props) {
   return (
-    <svg className={cn(props.className)} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
         d="M6 0H1a1 1 0 00-1 1v5a1 1 0 001 1h5a1 1 0 001-1V1a1 1 0 00-1-1zM5 5H2V2h3v3zm10 4h-5a1 1 0 00-1 1v5a1 1 0 001 1h5a1 1 0 001-1v-5a1 1 0 00-1-1zm-1 5h-3v-3h3v3zM6 9H1a1 1 0 00-1 1v5a1 1 0 001 1h5a1 1 0 001-1v-5a1 1 0 00-1-1zm-1 5H2v-3h3v3zm7.5-7a1 1 0 01-.707-.293l-2.5-2.5a1 1 0 010-1.414l2.5-2.5a1 1 0 011.414 0l2.5 2.5a1 1 0 010 1.414l-2.5 2.5A1 1 0 0112.5 7z"
-        fill="#A2A2A8"
+        // fill="#A2A2A8"
+        className={cn(props.className)}
       />
     </svg>
   );
