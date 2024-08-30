@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`transition-all px-2  ${inter.className}`}>
+      <body className={`mx-2 transition-all ${inter.className}`}>
         <ClientProvider>{children}</ClientProvider>
       </body>
     </html>

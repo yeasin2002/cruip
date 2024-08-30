@@ -12,21 +12,21 @@ export const Statistics = ({ ...props }: Props) => {
   return (
     <div
       {...props}
-      className="grid grid-cols-2 md:grid-cols-4 gap-4  border-[#a2a2a8]/30 border-b pb-20 mb-3 "
+      className="mb-3 grid grid-cols-2 gap-4 border-b border-[#a2a2a8]/30 pb-20 md:grid-cols-4"
     >
       {list.map((item) => {
         return (
           <div
             key={item.value}
-            className={`  bg-[#ffffff] shadow-lg dark:bg-[#2f2e33] flex items-center justify-center flex-col py-11     size-full  `}
+            className={`flex size-full flex-col items-center justify-center bg-[#ffffff] py-11 shadow-lg dark:bg-[#2f2e33]`}
           >
             <p
-              className={` text-5xl font-black tracking-[-0.8416px] leading-10 m-0 mb-1 text-center ${RedHatDisplay.className} `}
+              className={`m-0 mb-1 text-center text-5xl font-black leading-10 tracking-[-0.8416px] ${RedHatDisplay.className} `}
             >
               {item.value}
             </p>
             <p
-              className={`  tracking-[-0.16px] leading-6 text-center ${interFont.className} font-normal	`}
+              className={`text-center leading-6 tracking-[-0.16px] ${interFont.className} font-normal`}
             >
               {item.label}
             </p>

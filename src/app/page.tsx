@@ -3,7 +3,7 @@ import React from "react";
 import { Nav } from "@/components/global";
 import { Hero, Statistics } from "@/components/Home";
 
-import { ServerSliders } from "@/components/Home/ServerSliders";
+import { ServiceSlider2 } from "@/components/Home/ServiceSlider2";
 
 const RootPage = () => {
   return (
@@ -13,7 +13,8 @@ const RootPage = () => {
         <Hero />
         <Statistics />
       </div>
-      <ServerSliders />
+
+      <ServiceSlider2 />
     </>
   );
 };

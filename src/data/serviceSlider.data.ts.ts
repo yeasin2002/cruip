@@ -1,45 +1,39 @@
+import sliderImg1 from "@/assets/images/carousel-item-01.jpg";
+import sliderImg2 from "@/assets/images/carousel-item-02.jpg";
+import sliderImg3 from "@/assets/images/carousel-item-03.jpg";
+import sliderImg4 from "@/assets/images/carousel-item-04.jpg";
+import sliderImg5 from "@/assets/images/carousel-item-05.jpg";
+
 export const serviceSliderData = [
   {
-    img: "https://images.unsplash.com/photo-1446185250204-f94591f7d702",
+    img: sliderImg1.src,
     title: "Comprehensive Dental Care",
     cta: "Learn more",
     ctaLink: "/services/dental-care",
   },
   {
-    img: "https://images.unsplash.com/photo-1508186736123-44a5fcb36f9f",
+    img: sliderImg2.src,
     title: "Advanced Orthodontics",
     cta: "Learn more",
     ctaLink: "/services/orthodontics",
   },
   {
-    img: "https://images.unsplash.com/photo-1466232373731-46205f0b668e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: sliderImg3.src,
     title: "Teeth Whitening",
     cta: "Learn more",
     ctaLink: "/services/teeth-whitening",
   },
 
   {
-    img: "https://images.unsplash.com/photo-1503853585905-d53f628e46ac?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: sliderImg4.src,
     title: "Oral Surgery",
     cta: "Learn more",
     ctaLink: "/services/oral-surgery",
   },
   {
-    img: "https://images.unsplash.com/photo-1492284163710-4eef97892705?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: sliderImg5.src,
     title: "Pediatric Dentistry",
     cta: "Learn more",
     ctaLink: "/services/pediatric-dentistry",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516916759473-600c07bc12d4?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Dental Implants",
-    cta: "Learn more",
-    ctaLink: "/services/dental-implants",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1513746347121-4cfd77c7dc37?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Preventive Dentistry",
-    cta: "Learn more",
-    ctaLink: "/services/preventive-dentistry",
   },
 ];
