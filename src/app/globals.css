@@ -76,6 +76,9 @@
   .section-divider {
     @apply border-t border-[#a2a2a8]/30 pt-20;
   }
+  .filter-icons {
+    @apply size-4 text-gray-200;
+  }
 }
 
 /*  Custom CSS  */
