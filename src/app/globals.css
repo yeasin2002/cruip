@@ -7,6 +7,7 @@
     --background: 0 0% 100%;
     --foreground: 240°, 3%, 12%;
     --main-green: 178, 53%, 48%;
+    --main-green-fade: 179, 51%, 39%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -37,6 +38,7 @@
     --background: 240°, 3%, 12%;
     --foreground: 0, 0%, 100%;
     --main-green: 178, 53%, 48%;
+    --main-green-fade: 179, 51%, 39%;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;

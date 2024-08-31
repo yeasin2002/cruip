@@ -6,14 +6,7 @@ import { cn } from "@/utils";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { interFont } from "@/fonts";
 import { AlignJustify } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 interface Props extends React.ComponentProps<"div"> {}
 

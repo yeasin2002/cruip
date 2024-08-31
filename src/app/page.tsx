@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Nav } from "@/components/global";
-import { Hero, Statistics } from "@/components/Home";
+import { Hero, Statistics, ShowOffService, Pricing, Testimonial } from "@/components/Home";
 
 import { ServiceSlider2 } from "@/components/Home/ServiceSlider2";
 import { ListFilters } from "@/components/Home/ListFilters";
@@ -15,9 +15,12 @@ const RootPage = () => {
         <Statistics />
       </div>
 
-      {/* client components */}
       <ServiceSlider2 />
       <ListFilters />
+
+      <ShowOffService />
+      <Pricing />
+      <Testimonial />
     </>
   );
 };

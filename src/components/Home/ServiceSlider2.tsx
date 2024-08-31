@@ -55,7 +55,7 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
         ref={swiperRef}
         breakpoints={{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
       >
-        {serviceSliderData?.map((item, index) => {
+        {serviceSliderData?.map((item) => {
           return (
             <SwiperSlide key={item.title}>
               <div className="relative flex cursor-pointer items-center justify-center rounded-md">
