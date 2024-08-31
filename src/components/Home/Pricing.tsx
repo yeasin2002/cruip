@@ -31,8 +31,8 @@ export const Pricing = ({ ...props }: Props) => {
       <div
       // className="flex flex-col py-10"
       >
-        <div className="grid grid-cols-1 gap-x-5 gap-y-5 py-10 sm:px-4">
-          <div className="relative left-0 top-0 order-last md:w-[40%]">
+        <div className="grid grid-cols-1 gap-x-5 gap-y-5 py-10 sm:grid-cols-2 sm:px-4 lg:grid-cols-4">
+          <div className="relative left-0 top-0 order-last sm:order-first md:w-[40%]">
             <p
               className={
                 "m-0 mb-4 mt-8 box-border text-nowrap font-sans text-lg font-bold leading-[27px] tracking-[-0.16px] text-[#F4F4F5] antialiased " +

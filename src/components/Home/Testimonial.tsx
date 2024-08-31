@@ -8,7 +8,10 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const Testimonial = ({ ...props }: Props) => {
   return (
-    <div {...props} className="grid grid-cols-1 gap-x-12 gap-y-16 border-t border-[#a2a2a8]/30 py-16 sm:container">
+    <div
+      {...props}
+      className="grid grid-cols-1 gap-x-12 gap-y-16 border-t border-[#a2a2a8]/30 py-16 sm:container sm:grid-cols-2"
+    >
       {testimonialData.map((user) => {
         return (
           <div key={user.name} className="flex flex-col items-center justify-center gap-y-2">
