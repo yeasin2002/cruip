@@ -22,15 +22,13 @@ export const Pricing = ({ ...props }: Props) => {
   ];
 
   return (
-    <div {...props} className="px-2 sm:container sm:px-0">
+    <div {...props} className="px-4 sm:container sm:px-0">
       <HomeMain
         heading="Start building for free, then add a plan to go live"
         desc="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
       />
 
-      <div
-      // className="flex flex-col py-10"
-      >
+      <div>
         <div className="grid grid-cols-1 gap-x-5 gap-y-5 py-10 sm:grid-cols-2 sm:px-4 lg:grid-cols-4">
           <div className="relative left-0 top-0 order-last sm:order-first md:w-[40%]">
             <p

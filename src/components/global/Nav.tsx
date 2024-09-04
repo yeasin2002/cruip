@@ -14,7 +14,7 @@ export const Nav = ({ className, ...props }: Props) => {
   const navItem = ["About", "Blog", "Testimonials", "Resources"];
 
   return (
-    <nav {...props} className={cn("flex items-center justify-between px-4 py-6", className)}>
+    <nav {...props} className={cn("flex items-center justify-between py-6", className)}>
       <div className="flex items-center gap-x-4">
         <Logo />
         <div className="hidden items-center gap-x-3 md:flex">

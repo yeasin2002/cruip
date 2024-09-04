@@ -6,3 +6,4 @@ export * from "./Pricing";
 export * from "./Testimonial";
 export * from "./Features";
 export * from "./CallToAction";
+export * from "./Footer";

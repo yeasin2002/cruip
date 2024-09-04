@@ -21,7 +21,7 @@ export const Hero = ({ ...props }: Props) => {
 
   return (
     <div {...props} className="relative overflow-x-hidden">
-      <div className="flex flex-col items-center gap-x-10 gap-y-10 px-4 py-16 md:flex-row">
+      <div className="flex flex-col items-center gap-x-10 gap-y-10 py-16 md:flex-row">
         <div className="space-y-6 text-center md:text-start">
           <h1 className="text-5xl font-black tracking-tighter text-foreground sm:text-6xl md:text-8xl md:leading-[97.68px]">
             Your website, <br /> reimagined

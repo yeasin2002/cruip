@@ -6,10 +6,10 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const Features = ({ ...props }: Props) => {
   return (
-    <div {...props} className="container my-10 px-2 sm:px-0">
+    <div {...props} className="my-10">
       <HomeMain heading="Put clarity at the center of your website" desc="" />
 
-      <div className="grid grid-cols-4 gap-x-6 gap-y-10 p-10 px-4">
+      <div className="grid grid-cols-1 gap-4 py-10 sm:grid-cols-2">
         {featureData.map((feature, i) => {
           return (
             <div key={i} style={{ backgroundImage: feature.bgColor }} className="px-8 py-6">
