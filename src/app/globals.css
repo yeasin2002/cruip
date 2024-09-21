@@ -81,6 +81,9 @@
   .filter-icons {
     @apply size-4 font-bold text-mainGreen dark:text-gray-200;
   }
+  .showOff-icon {
+    @apply mx-auto flex size-7 items-center justify-center rounded-full bg-mainGreen p-6 text-[#4FD1C5] dark:bg-[#31979540];
+  }
 }
 
 /*  Custom CSS  */

@@ -45,6 +45,7 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
       </div>
 
       <Swiper
+        slidesPerView={1}
         loop
         centeredSlides={true}
         spaceBetween={30}
@@ -53,7 +54,7 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
         modules={[Navigation]}
         className="mySwiper"
         ref={swiperRef}
-        breakpoints={{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
+        breakpoints={{ 640: { slidesPerView: 2.1, spaceBetween: 0 } }}
       >
         {serviceSliderData?.map((item) => {
           return (

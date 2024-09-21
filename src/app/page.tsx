@@ -23,10 +23,8 @@ const RootPage = () => {
         <Hero />
         <Statistics />
       </div>
-
       <ServiceSlider2 />
       <ListFilters />
-
       <ShowOffService />
       <Pricing />
       <Testimonial />
